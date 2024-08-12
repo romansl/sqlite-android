@@ -31,6 +31,7 @@ sqlite_flags := \
     -DSQLITE_MAX_EXPR_DEPTH=0 \
     -DSQLITE_USE_ALLOCA \
     -DSQLITE_ENABLE_BATCH_ATOMIC_WRITE \
+	-DSQLITE_ENABLE_DBSTAT_VTAB \
     -O3
 
 LOCAL_CFLAGS += $(sqlite_flags)
